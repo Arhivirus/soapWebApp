@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="country" type="{http://tutorialspoint/schemas}country"/&gt;
+ *         &lt;element name="pilot" type="{http://tutorialspoint/schemas}pilot"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "country"
+    "pilot"
 })
-@XmlRootElement(name = "getCountryResponse")
-public class GetCountryResponse {
+@XmlRootElement(name = "getPilotResponse")
+public class GetPilotResponse {
 
     @XmlElement(required = true)
-    protected Country country;
+    protected Pilot pilot;
 
     /**
-     * Gets the value of the country property.
+     * Gets the value of the pilot property.
      * 
      * @return
      *     possible object is
-     *     {@link Country }
+     *     {@link Pilot }
      *     
      */
-    public Country getCountry() {
-        return country;
+    public Pilot getPilot() {
+        return pilot;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the value of the pilot property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Country }
+     *     {@link Pilot }
      *     
      */
-    public void setCountry(Country value) {
-        this.country = value;
+    public void setPilot(Pilot value) {
+        this.pilot = value;
     }
 
 }
