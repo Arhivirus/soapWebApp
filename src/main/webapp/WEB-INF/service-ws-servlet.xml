@@ -11,10 +11,10 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 
     <sws:annotation-driven />
 
-    <sws:dynamic-wsdl id="country"
-                      portTypeName="country"
+    <sws:dynamic-wsdl id="pilot"
+                      portTypeName="pilot"
                       locationUri="http://localhost:8080/country"
                       targetNamespace="http://tutorialspoint/schemas">
-        <sws:xsd location="classpath:xsd/country.xsd"/>
+        <sws:xsd location="classpath:xsd/pilot.xsd"/>
     </sws:dynamic-wsdl>
 </beans>
